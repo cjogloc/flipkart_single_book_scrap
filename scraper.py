@@ -5,9 +5,7 @@ url = "http://www.flipkart.com/fundamentals-digital-circuits-2-e-english-2nd/p/i
 html = scraperwiki.scrape(url)
 authors =''
 root = lxml.html.fromstring(html)
-for el in root.cssselect("h1"):   
-     if el.attrib['itemprop']=="name":       
-     title='abc'
+
 for el in root.cssselect("div.nprod-specs div span"):
     if el.text == "Author:" :
         el = el.getparent()
