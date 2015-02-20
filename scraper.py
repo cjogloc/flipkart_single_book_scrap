@@ -12,10 +12,10 @@ for el in root.cssselect("div.nprod-specs div span"):
         for authorel in el.cssselect("a"):
             authors += authorel.text + ", "
 
-for el in root.cssselect("span#selling-price"):
-    mrprice = el.text
-for el in root.cssselect("span#selling-price"):
-    fkprice = el.text
+for el in root.cssselect("div.prices img"):
+    if el.attrib['itemprop']=="price":
+    mrprice=el.attrib['content']
+   fkprice=el.attrib['content']
 
 for tr in root.cssselect("div#productSpecs tr"):
     if tr.cssselect("td"):
@@ -41,7 +41,7 @@ for tr in root.cssselect("div#productSpecs tr"):
 
     
 for el in root.cssselect("div.imgWrapper img"):
-    img_url = el.attrib['src']
+    img_url = el.attrib['data-src']
     print img_url
 
 
