@@ -1,7 +1,7 @@
 import scraperwiki           
 import lxml.html           
 
-url = "http://www.flipkart.com/search-books?query=9788120336797"
+url = "http://www.flipkart.com/fundamentals-digital-circuits-2-e-english-2nd/p/itmdx5gwz4xzmtbf?pid=9788120336797&sid=bks&query=9788120336797&q=9788120336797"
 html = scraperwiki.scrape(url)
 authors =''
 root = lxml.html.fromstring(html)
