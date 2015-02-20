@@ -40,7 +40,7 @@ for tr in root.cssselect("div#specifications tr"):
             book_type = tds[1].text_content()
 
     
-for el in root.cssselect("div.image-wrapper img"):
+for el in root.cssselect("div.imgWrapper img"):
     img_url = el.attrib['src']
     print img_url
 
