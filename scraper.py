@@ -12,12 +12,12 @@ for el in root.cssselect("div.nprod-specs div span"):
         for authorel in el.cssselect("a"):
             authors += authorel.text + ", "
 
-for el in root.cssselect("span#fk-mprod-list-id"):
+for el in root.cssselect("span#selling-price omniture-field"):
     mrprice = el.text
-for el in root.cssselect("span.fk-font-finalprice"):
+for el in root.cssselect("span#selling-price omniture-field"):
     fkprice = el.text
 
-for tr in root.cssselect("div#specifications tr"):
+for tr in root.cssselect("div#productSpecs tr"):
     if tr.cssselect("td"):
         tds = tr.cssselect("td")
         if tds[0].text_content()=="Publisher":
