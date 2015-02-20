@@ -14,8 +14,8 @@ for el in root.cssselect("div.nprod-specs div span"):
 
 for el in root.cssselect("div.prices img"):
     if el.attrib['itemprop']=="price":
-    mrprice=el.attrib['content']
-   fkprice=el.attrib['content']
+        mrprice=el.attrib['content']
+        fkprice=el.attrib['content']
 
 for tr in root.cssselect("div#productSpecs tr"):
     if tr.cssselect("td"):
