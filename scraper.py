@@ -48,7 +48,7 @@ for el in root.cssselect("div.imgWrapper img"):
 data = {
             'url':url,
             'img_url':img_url,
-            'title':title,
+          
             'mrp':mrprice,
             'fkprice':fkprice,
             'authors':authors,
