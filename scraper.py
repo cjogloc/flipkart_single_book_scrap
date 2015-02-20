@@ -12,9 +12,9 @@ for el in root.cssselect("div.nprod-specs div span"):
         for authorel in el.cssselect("a"):
             authors += authorel.text + ", "
 
-for el in root.cssselect("span#selling-price omniture-field"):
+for el in root.cssselect("span#selling-price"):
     mrprice = el.text
-for el in root.cssselect("span#selling-price omniture-field"):
+for el in root.cssselect("span#selling-price"):
     fkprice = el.text
 
 for tr in root.cssselect("div#productSpecs tr"):
